@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-play-link]').forEach((el)=>el.addEventListener('click',(e)=>{if(el.getAttribute('href')==='#google-play')e.preventDefault()}));document.querySelectorAll('[data-year]').forEach((el)=>el.textContent=new Date().getFullYear());
