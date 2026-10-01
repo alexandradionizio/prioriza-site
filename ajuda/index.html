@@ -1,9 +1,200 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#070A10"><title>Central de Ajuda — PRIORIZA</title><link rel="icon" href="../assets/logo.svg"><link rel="stylesheet" href="../styles.css"></head><body><header class="nav"><div class="container nav-in"><a class="brand" href="../"><img src="../assets/logo.svg" alt=""><span>PRIORIZA</span></a><nav class="nav-links"><a href="../privacidade/">Privacidade</a><a href="../termos/">Termos</a><a href="../suporte/">Suporte</a></nav></div></header><main class="legal"><div class="container"><article><div class="breadcrumb"><a href="../">Início</a> › Ajuda</div><h1>Central de Ajuda</h1><p class="lead">O essencial para configurar o PRIORIZA e entender o que ele está fazendo.</p>
-<div class="help-grid"><a class="card help-link" href="#primeiros-passos"><div class="icon">⚡</div><h3>Primeiros passos</h3><p>Permissões e configuração inicial.</p></a><a class="card help-link" href="#pessoas"><div class="icon">👤</div><h3>Pessoas prioritárias</h3><p>Como escolher e configurar pessoas.</p></a><a class="card help-link" href="#protecao"><div class="icon">🔕</div><h3>Proteção</h3><p>Som, vibrar, silencioso e Não Perturbe.</p></a><a class="card help-link" href="#backup"><div class="icon">☁️</div><h3>Backup</h3><p>Conta Google, atualização e restauração.</p></a></div>
-<h2 id="primeiros-passos">Primeiros passos</h2><p>Na primeira abertura, o PRIORIZA apresenta uma configuração guiada para liberar somente os acessos necessários. A etapa de backup é opcional e pode ser ignorada.</p>
-<h2 id="pessoas">Pessoas prioritárias</h2><p>Use a área Pessoas para escolher quem merece prioridade. No Android 17 ou mais recente, o botão <strong>Adicionar pessoas da agenda</strong> abre o seletor oficial do Android: o PRIORIZA recebe somente os contatos que você selecionar, sem acesso amplo à agenda.</p><p>No Android 16 ou anterior, o fluxo de agenda pode solicitar a permissão de contatos. Depois de adicionar uma pessoa, abra o perfil dela para ajustar chamadas, mensagens, horários e outros comportamentos disponíveis.</p>
-<h2 id="protecao">Estados da proteção</h2><ul class="list"><li>🔊 Som normal · Em espera</li><li>📳 Vibrar · Som prioritário</li><li>🔕 Silencioso · Proteção ativa</li><li>🌙 Não Perturbe · Proteção ativa</li></ul><p>No modo Vibrar, o aparelho já produz sua vibração normal e o PRIORIZA evita duplicar essa vibração. Em Silencioso e Não Perturbe, o comportamento depende das regras configuradas para a pessoa.</p>
-<h2 id="backup">Backup e Conta Google</h2><p>O backup pode ser conectado durante a configuração inicial ou depois em Ajustes → Conta. A tela mostra o e-mail usado, o horário do último backup e permite trocar de conta, atualizar, restaurar, excluir o backup ou desconectar a Conta Google.</p><p>Excluir o backup remove a cópia do PRIORIZA e a chave de restauração daquela Conta Google sem apagar as pessoas e regras deste aparelho. Desconectar a conta revoga o acesso do PRIORIZA, mas não apaga automaticamente um backup que já esteja no Drive.</p><p>O PRIORIZA mantém um backup atual em vez de criar uma sequência de arquivos iguais no Drive.</p>
-<h2>Compatibilidade</h2><p>Integrações com aplicativos dependem de como cada aplicativo e versão do Android apresenta suas notificações. Alterações externas podem exigir atualização do PRIORIZA.</p>
-<h2>Precisa de mais ajuda?</h2><p>Consulte a página de <a href="../suporte/"><strong>Suporte</strong></a>.</p>
-</article></div></main><footer class="footer"><div class="container footer-in"><div>PRIORIZA · Pessoas, não aplicativos.</div><div class="footer-links"><a href="../">Início</a><a href="../privacidade/">Privacidade</a><a href="../termos/">Termos</a></div></div></footer></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070A10">
+<meta name="description" content="Central de Ajuda do PRIORIZA: pessoas prioritárias, alertas, segunda chamada, horários, mesclagem, backup e suporte.">
+<title>Central de Ajuda — PRIORIZA</title>
+<link rel="icon" href="../assets/logo.svg">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="nav">
+<div class="container nav-in">
+<a class="brand" href="../"><img src="../assets/logo.svg" alt=""><span>PRIORIZA</span></a>
+<nav class="nav-links"><a href="../privacidade/">Privacidade</a><a href="../termos/">Termos</a><a href="../suporte/">Suporte</a></nav>
+</div>
+</header>
+
+<main class="legal">
+<div class="container">
+<article>
+<div class="breadcrumb"><a href="../">Início</a> › Ajuda</div>
+<h1>Central de Ajuda</h1>
+<p class="lead">Aprenda a configurar o PRIORIZA, entender cada regra e resolver as dúvidas mais comuns.</p>
+
+<div class="help-grid">
+<a class="card help-link" href="#primeiros-passos"><div class="icon">⚡</div><h3>Primeiros passos</h3><p>Configuração inicial, permissões e teste do alerta.</p></a>
+<a class="card help-link" href="#pessoas"><div class="icon">👤</div><h3>Pessoas prioritárias</h3><p>Adicionar, remover prioridade e identidades.</p></a>
+<a class="card help-link" href="#regras"><div class="icon">🎛️</div><h3>Regras por pessoa</h3><p>Chamadas, mensagens, e-mails, som e vibração.</p></a>
+<a class="card help-link" href="#segunda-chamada"><div class="icon">📞</div><h3>Segunda chamada</h3><p>Como funciona a janela de 5 minutos.</p></a>
+<a class="card help-link" href="#horarios"><div class="icon">🕒</div><h3>Horários</h3><p>Dias, início, fim e janelas que atravessam a meia-noite.</p></a>
+<a class="card help-link" href="#mesclar"><div class="icon">🔗</div><h3>Mesclar pessoas</h3><p>Unir registros duplicados sem alterar a agenda do celular.</p></a>
+<a class="card help-link" href="#protecao"><div class="icon">🔕</div><h3>Proteção</h3><p>Som normal, Vibrar, Silencioso e Não Perturbe.</p></a>
+<a class="card help-link" href="#backup"><div class="icon">☁️</div><h3>Backup</h3><p>Conta Google, restauração, exclusão e desconexão.</p></a>
+</div>
+
+<h2 id="primeiros-passos">Primeiros passos</h2>
+<p>Na primeira abertura, o PRIORIZA apresenta uma configuração guiada. O objetivo é liberar somente os acessos necessários para o funcionamento do app. O backup em Conta Google é opcional e pode ser ignorado.</p>
+<p>Depois da configuração, abra <strong>Ajustes</strong> para conferir o estado da proteção. Em <strong>Mais opções</strong>, use <strong>Testar alerta prioritário</strong> para confirmar que o aparelho consegue reproduzir o alerta.</p>
+
+<h2 id="pessoas">Pessoas prioritárias</h2>
+<p>O PRIORIZA prioriza <strong>pessoas, não aplicativos</strong>. Abra <strong>Pessoas</strong> e adicione quem realmente precisa conseguir chamar sua atenção.</p>
+<p>No Android 17 ou mais recente, <strong>Adicionar pessoas prioritárias</strong> abre o seletor oficial do Android e o PRIORIZA recebe somente as pessoas escolhidas. No Android 16 ou anterior, o fluxo legado pode solicitar acesso à agenda.</p>
+<p>Ao remover a prioridade de alguém, as regras, horários, toque e identidades configuradas são mantidos. A pessoa simplesmente deixa de furar o silêncio até que a prioridade seja ativada novamente.</p>
+
+<h3>Adicionar identidades extras</h3>
+<p>No perfil da pessoa, a área de identidades permite cadastrar manualmente formas adicionais de reconhecê-la. Entre as opções atuais estão Instagram, Facebook, WhatsApp, WhatsApp Business, Telegram, Signal, Messenger, TikTok, telefone, e-mail e outro aplicativo.</p>
+<p>Esses dados ajudam o PRIORIZA a reconhecer a mesma pessoa em fontes diferentes. O simples fato de um nome parecer parecido não torna alguém prioritário automaticamente.</p>
+
+<h2 id="regras">Regras por pessoa</h2>
+<p>Abra uma pessoa prioritária para configurar como ela pode alertar. Cada pessoa possui regras próprias.</p>
+<ul class="list">
+<li><strong>Mensagens podem alertar:</strong> permite ou bloqueia alertas prioritários vindos de mensagens reconhecidas.</li>
+<li><strong>Chamadas podem alertar:</strong> permite ou bloqueia alertas prioritários de chamadas.</li>
+<li><strong>E-mails podem alertar:</strong> permite ou bloqueia alertas prioritários de e-mails reconhecidos.</li>
+<li><strong>Toque:</strong> permite escolher um som do aparelho para aquela pessoa. Sem escolha personalizada, o PRIORIZA usa o toque padrão de alarme.</li>
+<li><strong>Vibrar:</strong> define se o alerta dessa pessoa pode incluir vibração quando aplicável.</li>
+<li><strong>Pausar esta pessoa por 1 hora:</strong> suspende temporariamente os alertas daquela pessoa sem apagar suas regras.</li>
+</ul>
+
+<h3>Como colocar um som diferente em uma pessoa</h3>
+<p>Abra <strong>Pessoas → escolha a pessoa → Toque</strong>. O Android abrirá o seletor de sons. Escolha o toque desejado e volte ao PRIORIZA. Essa escolha pertence somente àquela pessoa.</p>
+
+<h2 id="segunda-chamada">Segunda chamada e a janela de 5 minutos</h2>
+<p>A opção <strong>Exigir segunda chamada em até 5 min</strong> serve para situações em que você não quer que a primeira tentativa já gere o alerta prioritário do PRIORIZA.</p>
+<div class="notice"><strong>Exemplo:</strong> Maria liga às 22:00. O PRIORIZA registra essa tentativa, mas não dispara o alerta prioritário. Se Maria ligar novamente até 22:05, a segunda tentativa pode alertar, desde que as outras regras dela também permitam.</div>
+<p>Se a segunda ligação ocorrer depois da janela de 5 minutos, ela passa a ser tratada como uma nova primeira tentativa para essa regra.</p>
+<p>Atualizações da mesma chamada em andamento não contam como uma segunda ligação. A regra considera uma nova tentativa real de chamada.</p>
+
+<h2 id="horarios">Horários e janelas</h2>
+<p>Ative <strong>Restringir por horário</strong> quando quiser que uma pessoa tenha prioridade somente em determinados dias e horários.</p>
+<p>Primeiro escolha os <strong>dias em que a janela começa</strong>. Depois informe o horário de <strong>Início</strong> e <strong>Fim</strong> no formato HH:MM.</p>
+<div class="notice"><strong>Exemplo que atravessa a meia-noite:</strong> sexta-feira, início 22:00 e fim 07:00. A janela começa na sexta às 22:00 e continua até sábado às 07:00.</div>
+<p>Quando o horário inicial e final são iguais, a janela vale 24 horas nos dias selecionados. Se nenhum dia estiver selecionado, nenhum alerta será permitido por essa regra de horário.</p>
+
+<h2 id="mesclar">Mesclar pessoas e contatos duplicados</h2>
+<p>Use <strong>Mesclar pessoas no PRIORIZA</strong> quando dois ou mais registros representam a mesma pessoa. Isso pode acontecer, por exemplo, quando existem números diferentes, cadastros antigos ou identidades vindas de fontes diferentes.</p>
+<p>A mesclagem acontece <strong>somente dentro do PRIORIZA</strong>. Sua agenda do celular não é modificada.</p>
+<p>Na tela de mesclagem, procure os registros, selecione os que pertencem à mesma pessoa e escolha qual será o registro principal. Depois confirme a mesclagem.</p>
+<p>Se precisar voltar atrás, a própria tela oferece <strong>Desfazer mesclagem</strong>. Os registros voltam a aparecer separadamente no PRIORIZA.</p>
+
+<h2 id="protecao">Estados da proteção</h2>
+<ul class="list">
+<li>🔊 <strong>Som normal · Em espera</strong> — o aparelho já está audível, então o PRIORIZA evita duplicar o som.</li>
+<li>📳 <strong>Vibrar · Som prioritário</strong> — o aparelho já vibra; o PRIORIZA pode acrescentar o som prioritário sem vibrar novamente.</li>
+<li>🔕 <strong>Silencioso · Proteção ativa</strong> — o PRIORIZA pode usar som e a vibração configurada para a pessoa.</li>
+<li>🌙 <strong>Não Perturbe · Proteção ativa</strong> — a proteção usa as autorizações e regras configuradas para tentar entregar o alerta prioritário.</li>
+</ul>
+<p>O comportamento final também depende das regras da pessoa, das permissões concedidas e das políticas do Android e do fabricante do aparelho.</p>
+
+<h2 id="backup">Backup e Conta Google</h2>
+<p>O backup pode ser conectado durante a configuração inicial ou depois em <strong>Ajustes → Conta</strong>. A tela mostra a Conta Google usada, o horário do último backup e permite atualizar, restaurar, excluir o backup ou desconectar a conta.</p>
+<ul class="list">
+<li><strong>Atualizar backup:</strong> salva uma nova cópia das configurações atuais.</li>
+<li><strong>Restaurar backup:</strong> recupera pessoas, vínculos e regras salvos na mesma Conta Google.</li>
+<li><strong>Excluir backup:</strong> remove o arquivo do PRIORIZA e a chave automática de restauração daquela conta, sem apagar as pessoas e regras que já estão neste aparelho.</li>
+<li><strong>Desconectar Conta Google:</strong> revoga o acesso do PRIORIZA à conta. Isso não apaga automaticamente um backup que já esteja no Drive.</li>
+</ul>
+<p>O backup é criptografado antes do envio. A APS não mantém uma segunda cópia desse backup em servidor próprio.</p>
+
+<h2 id="compatibilidade">Compatibilidade com aplicativos</h2>
+<p>O PRIORIZA depende das informações que o Android e cada aplicativo apresentam nas notificações. Uma atualização do WhatsApp, Instagram, TikTok, Telegram, Gmail ou outro aplicativo pode mudar esse formato e exigir uma atualização de compatibilidade do PRIORIZA.</p>
+<p>Se uma identidade não puder ser confirmada com segurança, o PRIORIZA pode pedir que você diga a qual pessoa aquele remetente pertence. Essa confirmação serve para evitar que um nome parecido seja tratado como prioridade por engano.</p>
+
+<h2 id="faq">Perguntas frequentes</h2>
+<div class="faq">
+
+<details><summary>O PRIORIZA funciona com o celular no silencioso?</summary><p>Sim. O modo Silencioso é um dos estados em que a proteção prioritária foi criada para agir, desde que as permissões e regras da pessoa estejam configuradas.</p></details>
+
+<details><summary>Ele funciona no modo Vibrar?</summary><p>Sim. Como o próprio aparelho já vibra, o PRIORIZA evita uma segunda vibração e pode acrescentar o som prioritário.</p></details>
+
+<details><summary>E com o Não Perturbe ativado?</summary><p>O PRIORIZA possui proteção para esse estado, mas precisa das autorizações necessárias do Android. O resultado também pode variar conforme fabricante e versão do sistema.</p></details>
+
+<details><summary>Por que o PRIORIZA fica em espera quando o som normal está ligado?</summary><p>Porque o aparelho já está audível. O PRIORIZA evita duplicar um alerta que o próprio sistema já consegue reproduzir normalmente.</p></details>
+
+<details><summary>Como adiciono uma pessoa prioritária?</summary><p>Abra Pessoas e use o botão de adicionar pessoas prioritárias. No Android 17 ou mais recente, você escolhe os contatos pelo seletor oficial do sistema.</p></details>
+
+<details><summary>Posso remover a prioridade sem perder as configurações?</summary><p>Sim. Ao remover a prioridade, as regras, horários, toque e identidades daquela pessoa são preservados.</p></details>
+
+<details><summary>Como escolho um som diferente para cada pessoa?</summary><p>Abra o perfil da pessoa e toque em Toque. O seletor de sons do Android será aberto e a escolha ficará associada àquela pessoa.</p></details>
+
+<details><summary>Posso desligar a vibração para uma pessoa específica?</summary><p>Sim. No perfil da pessoa, desligue a opção Vibrar.</p></details>
+
+<details><summary>O que significa “Exigir segunda chamada em até 5 min”?</summary><p>Significa que a primeira tentativa não dispara o alerta prioritário do PRIORIZA. Uma nova ligação da mesma pessoa dentro de 5 minutos pode dispará-lo, se as demais regras permitirem.</p></details>
+
+<details><summary>A primeira chamada fica completamente silenciosa quando essa regra está ativa?</summary><p>A regra controla o alerta prioritário do PRIORIZA. A apresentação normal da chamada continua dependendo do Android, do aplicativo de telefone e do modo de som do aparelho.</p></details>
+
+<details><summary>O que acontece se a pessoa ligar de novo depois dos 5 minutos?</summary><p>A nova ligação passa a iniciar uma nova janela e é tratada como uma primeira tentativa para a regra de segunda chamada.</p></details>
+
+<details><summary>Uma atualização da mesma chamada pode contar como segunda chamada?</summary><p>Não. O PRIORIZA diferencia atualizações da mesma chamada de uma nova tentativa real.</p></details>
+
+<details><summary>Posso escolher dias e horários para uma pessoa?</summary><p>Sim. Ative Restringir por horário, marque os dias em que a janela começa e defina os horários de início e fim.</p></details>
+
+<details><summary>Como funciona um horário que atravessa a meia-noite?</summary><p>Se o início for maior que o fim, por exemplo 22:00 até 07:00, o PRIORIZA entende que a janela continua no dia seguinte.</p></details>
+
+<details><summary>O que acontece se início e fim forem iguais?</summary><p>A janela vale 24 horas nos dias selecionados.</p></details>
+
+<details><summary>O que significa pausar uma pessoa?</summary><p>O botão Pausar esta pessoa por 1 hora suspende temporariamente os alertas dela. Depois do período, as regras voltam a valer. Também é possível retomar antes.</p></details>
+
+<details><summary>Por que a mesma pessoa pode aparecer mais de uma vez?</summary><p>Ela pode ter registros diferentes na agenda, números distintos ou identidades vindas de fontes diferentes. Nesses casos, a mesclagem ajuda a tratá-los como uma única pessoa dentro do PRIORIZA.</p></details>
+
+<details><summary>Mesclar pessoas altera minha agenda do celular?</summary><p>Não. A mesclagem existe somente dentro do PRIORIZA.</p></details>
+
+<details><summary>Posso desfazer uma mesclagem?</summary><p>Sim. Abra Mesclar pessoas e use Desfazer mesclagem no registro já unido.</p></details>
+
+<details><summary>Como adiciono Instagram, TikTok, Telegram ou outra identidade?</summary><p>Abra o perfil da pessoa, vá até Identidades extras, toque em Adicionar identidade, escolha a origem e informe o usuário, telefone, nome exibido ou identificador solicitado.</p></details>
+
+<details><summary>Por que o PRIORIZA pergunta a quem uma notificação pertence?</summary><p>Isso acontece quando há indícios de correspondência, mas não existe uma identificação segura. Você confirma a pessoa para evitar que o app adivinhe apenas pelo nome.</p></details>
+
+<details><summary>O PRIORIZA transforma um aplicativo inteiro em prioridade?</summary><p>Não. A prioridade pertence à pessoa. Uma notificação só deve gerar alerta quando a identidade reconhecida pertence a alguém prioritário e as regras dessa pessoa permitem.</p></details>
+
+<details><summary>Como testo se o alerta está funcionando?</summary><p>Abra Ajustes, expanda Mais opções e toque em Testar alerta prioritário. Enquanto o teste estiver tocando, o botão Parar alerta agora ficará disponível.</p></details>
+
+<details><summary>Por que uma pessoa prioritária pode não alertar?</summary><p>Confira se chamadas, mensagens ou e-mails estão permitidos para ela, se a pessoa não está pausada, se o horário permite o alerta, se a regra de segunda chamada está ativa e se as permissões da proteção continuam liberadas.</p></details>
+
+<details><summary>Uma atualização do WhatsApp, Instagram ou outro app pode afetar o PRIORIZA?</summary><p>Sim. Aplicativos terceiros podem mudar o formato das notificações. Quando isso acontece, pode ser necessária uma atualização de compatibilidade do PRIORIZA.</p></details>
+
+<details><summary>O PRIORIZA lê minhas mensagens?</summary><p>Alguns campos de texto de uma notificação podem ser lidos temporariamente em memória para reconhecimento e deduplicação. O conteúdo bruto não é mantido como histórico remoto de mensagens nem enviado para a APS.</p></details>
+
+<details><summary>O conteúdo das minhas mensagens entra no backup?</summary><p>Não. O backup não inclui conteúdo ou histórico de mensagens.</p></details>
+
+<details><summary>O PRIORIZA acessa toda a minha agenda?</summary><p>No Android 17 ou mais recente, não: o seletor oficial fornece somente as pessoas escolhidas. No Android 16 ou anterior, o fluxo legado pode solicitar a permissão de leitura da agenda.</p></details>
+
+<details><summary>O backup é obrigatório?</summary><p>Não. O PRIORIZA funciona sem Conta Google. O backup serve apenas para facilitar a restauração das suas configurações.</p></details>
+
+<details><summary>O que é salvo no backup?</summary><p>Entre outros dados necessários à restauração, podem ser salvos pessoas internas, prioridade, telefones e e-mails preservados, regras, horários, identidades, vínculos e mesclagens. Conteúdo de mensagens e diagnósticos temporários não entram.</p></details>
+
+<details><summary>Excluir o backup apaga minhas pessoas deste aparelho?</summary><p>Não. A exclusão remove a cópia do Drive e a chave de restauração daquela conta, mas preserva os dados locais do aparelho atual.</p></details>
+
+<details><summary>O que acontece ao desconectar a Conta Google?</summary><p>O PRIORIZA revoga o acesso à conta e desativa o vínculo local do backup. Um backup que já estava no Drive não é apagado automaticamente.</p></details>
+
+<details><summary>A APS guarda uma cópia do meu backup?</summary><p>Não. Na arquitetura atual, a APS não mantém servidor próprio com uma segunda cópia do backup.</p></details>
+
+<details><summary>O PRIORIZA funciona sem internet?</summary><p>As regras e decisões locais do PRIORIZA não dependem de um servidor da APS. Porém, serviços externos precisam da própria conexão: aplicativos de mensagens podem precisar de internet para receber eventos, e o Google Drive precisa de internet para backup e restauração.</p></details>
+
+<details><summary>Preciso deixar o PRIORIZA aberto na tela?</summary><p>Não é necessário manter a tela do app aberta. A proteção depende dos acessos e serviços permitidos pelo Android. Alguns fabricantes podem impor restrições extras de bateria ou segundo plano.</p></details>
+
+<details><summary>O PRIORIZA substitui um serviço de emergência?</summary><p>Não. O PRIORIZA é uma ferramenta de prioridade de comunicação e não deve ser tratado como serviço de emergência ou garantia de que um alerta será percebido em todas as condições.</p></details>
+
+<details><summary>Como falo com o suporte?</summary><p>Use Ajustes → Ajuda e suporte → Falar com o suporte, ou envie um e-mail para <a href="mailto:produtos.aps.suporte@gmail.com"><strong>produtos.aps.suporte@gmail.com</strong></a>.</p></details>
+
+<details><summary>Que informações entram no e-mail de “Relatar um problema”?</summary><p>O rascunho inclui somente versão do PRIORIZA, versão do Android, fabricante e modelo do aparelho. Contatos, nomes, mensagens e conteúdo de notificações não são anexados automaticamente.</p></details>
+
+</div>
+
+<h2>Precisa de mais ajuda?</h2>
+<p>Se a resposta não estiver aqui, fale com o <a href="../suporte/"><strong>Suporte PRIORIZA</strong></a> ou escreva para <a href="mailto:produtos.aps.suporte@gmail.com"><strong>produtos.aps.suporte@gmail.com</strong></a>.</p>
+</article>
+</div>
+</main>
+
+<footer class="footer">
+<div class="container footer-in">
+<div>PRIORIZA · Pessoas, não aplicativos.</div>
+<div class="footer-links"><a href="../">Início</a><a href="../privacidade/">Privacidade</a><a href="../termos/">Termos</a><a href="../suporte/">Suporte</a></div>
+</div>
+</footer>
+</body>
+</html>
