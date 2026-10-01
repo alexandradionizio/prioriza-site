@@ -7,7 +7,8 @@
 <div class="notice"><strong>Resumo:</strong> o PRIORIZA foi projetado para funcionar principalmente no aparelho. Não há, no aplicativo auditado, servidor próprio da APS para armazenar contatos, mensagens ou uma cópia do backup. O backup em nuvem é opcional e utiliza a Conta Google escolhida pelo usuário.</div>
 
 <h2>1. Dados da agenda</h2>
-<p>Quando o usuário concede acesso aos contatos, o PRIORIZA pode ler nome, telefone, e-mail, foto e identificadores técnicos da agenda. Esses dados são usados para criar e reconciliar as pessoas dentro do aplicativo.</p>
+<p>No Android 17 ou mais recente, o PRIORIZA usa o seletor de contatos oficial do sistema. O aplicativo recebe somente as pessoas escolhidas pelo usuário e solicita apenas os campos necessários para o reconhecimento, atualmente telefone e e-mail, além do nome e identificador de contato fornecidos pelo seletor.</p>
+<p>No Android 16 ou anterior, o aplicativo pode solicitar a permissão de leitura da agenda para permitir a seleção e reconciliação de pessoas. Nesse fluxo, pode ler nome, telefone, e-mail, foto e identificadores técnicos da agenda.</p>
 <p>Para pessoas configuradas ou prioritárias, algumas dessas informações podem permanecer armazenadas localmente para manter uma identidade estável mesmo quando a agenda muda. O aplicativo também utiliza fingerprints criptográficos de telefone e e-mail em partes do mecanismo de reconciliação.</p>
 
 <h2>2. Notificações</h2>
@@ -48,7 +49,8 @@
 <p>A APS não mantém, na arquitetura atual, um backend próprio com uma segunda cópia do backup do usuário.</p>
 
 <h2>10. Permissões do Android</h2>
-<p>Conforme as funções utilizadas, o aplicativo pode solicitar acesso a contatos, notificações, exibição de alertas, vibração, Não Perturbe e execução necessária à proteção em segundo plano. O PRIORIZA não solicita permissões de localização, câmera, microfone, SMS, registro de chamadas ou acesso amplo ao armazenamento.</p>
+<p>No Android 17 ou mais recente, a escolha de pessoas usa o seletor privado oficial e não depende da permissão ampla <code>READ_CONTACTS</code>. No Android 16 ou anterior, essa permissão pode ser solicitada para o fluxo de agenda legado.</p>
+<p>Conforme as funções utilizadas, o aplicativo também pode solicitar acesso a notificações, exibição de alertas, vibração, Não Perturbe e execução necessária à proteção em segundo plano. O PRIORIZA não solicita permissões de localização, câmera, microfone, SMS, registro de chamadas ou acesso amplo ao armazenamento.</p>
 
 <h2>11. Backup automático do Android</h2>
 <p>O backup genérico do Android e a transferência automática dos dados internos do app estão desativados. A restauração suportada pelo PRIORIZA é o backup opcional próprio descrito nesta Política.</p>
