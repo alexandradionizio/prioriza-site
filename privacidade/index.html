@@ -4,7 +4,7 @@
 <div class="breadcrumb"><a href="../">Início</a> › Privacidade</div><span class="tag">Versão de pré-lançamento · 2 de outubro de 2026</span>
 <h1>Política de Privacidade</h1>
 <p>Esta Política explica de forma clara como o PRIORIZA trata informações necessárias para reconhecer pessoas prioritárias, aplicar as regras escolhidas pelo usuário e, opcionalmente, manter um backup das configurações.</p>
-<div class="notice"><strong>Resumo:</strong> o PRIORIZA foi projetado para funcionar principalmente no aparelho. Não há, no aplicativo auditado, servidor próprio da APS para armazenar contatos, mensagens ou uma cópia do backup. O backup em nuvem é opcional e utiliza a Conta Google escolhida pelo usuário.</div>
+<div class="notice"><strong>Resumo:</strong> o PRIORIZA foi projetado para funcionar principalmente no aparelho. Não há, no aplicativo auditado, servidor próprio da APS para armazenar contatos, mensagens, compras ou uma cópia do backup. O backup em nuvem é opcional, faz parte do PRIORIZA Pro e utiliza a Conta Google escolhida pelo usuário. A compra do Pro é processada pela Google Play.</div>
 
 <h2>1. Dados da agenda</h2>
 <p>No Android 17 ou mais recente, o PRIORIZA usa o seletor de contatos oficial do sistema. O aplicativo recebe somente as pessoas escolhidas pelo usuário e solicita apenas os campos necessários para o reconhecimento, atualmente telefone e e-mail, além do nome e identificador de contato fornecidos pelo seletor.</p>
@@ -45,8 +45,11 @@
 <p>O usuário pode trocar essa conta dentro do aplicativo. Backups de contas diferentes não são misturados pelo PRIORIZA.</p>
 
 <h2>9. Serviços externos e transmissão de dados</h2>
-<p>No código auditado, a comunicação externa implementada pelo PRIORIZA é destinada à autorização Google e às APIs do Google Drive utilizadas para backup e restauração. O aplicativo não possui Firebase Analytics, Crashlytics, SDK de publicidade ou SDK de rastreamento.</p>
-<p>A APS não mantém, na arquitetura atual, um backend próprio com uma segunda cópia do backup do usuário.</p>
+<p>O PRIORIZA utiliza serviços do Google para duas finalidades externas: Google Drive, quando o usuário ativa o backup/restauração do PRIORIZA Pro, e Google Play Billing, quando o aplicativo consulta, compra ou restaura o direito ao PRIORIZA Pro.</p>
+<p>As compras são concluídas pelo fluxo oficial da Google Play. O PRIORIZA recebe somente as informações técnicas necessárias para identificar o produto, saber se a compra foi concluída ou está pendente, restaurar o acesso e reconhecer a transação. O aplicativo não recebe número de cartão, conta bancária nem credenciais do meio de pagamento.</p>
+<p>O PRIORIZA mantém localmente apenas o estado necessário para saber se os recursos Pro devem ficar liberados. O token técnico de compra recebido da Google Play é utilizado em memória quando necessário e não é persistido pelo aplicativo.</p>
+<p>O aplicativo não possui Firebase Analytics, Crashlytics, SDK de publicidade ou SDK de rastreamento.</p>
+<p>A APS não mantém, na arquitetura atual, backend próprio com uma segunda cópia do backup nem servidor próprio para armazenar ou validar compras.</p>
 
 <h2>10. Permissões do Android</h2>
 <p>No Android 17 ou mais recente, a escolha de pessoas usa o seletor privado oficial e não depende da permissão ampla <code>READ_CONTACTS</code>. No Android 16 ou anterior, essa permissão pode ser solicitada para o fluxo de agenda legado.</p>
@@ -59,13 +62,17 @@
 <p>O usuário pode remover pessoas, vínculos e configurações dentro do aplicativo, alterar permissões nas configurações do Android e optar por não conectar uma Conta Google para backup. A desinstalação remove o armazenamento local conforme o funcionamento do Android.</p>
 <p>Em <strong>Ajustes → Conta</strong>, a opção <strong>Excluir backup</strong> remove do Google Drive o arquivo de backup do PRIORIZA e a chave automática de restauração, sem apagar os dados locais do aparelho. A opção <strong>Desconectar Conta Google</strong> revoga o acesso do PRIORIZA à conta, mas não exclui automaticamente um backup remoto já existente.</p>
 
-<h2>13. Publicidade e venda de dados</h2>
+<h2>13. PRIORIZA Grátis e PRIORIZA Pro</h2>
+<p>O PRIORIZA pode ser usado gratuitamente com os recursos essenciais definidos para a versão Grátis. Recursos adicionais podem ser liberados pelo PRIORIZA Pro, oferecido como compra única pela Google Play.</p>
+<p>O preço e a disponibilidade da compra são apresentados pela própria Google Play conforme a região e a conta do usuário. O PRIORIZA não fixa no aplicativo os dados do meio de pagamento e não processa diretamente a cobrança.</p>
+
+<h2>14. Publicidade e venda de dados</h2>
 <p>O PRIORIZA não foi projetado para exibir anúncios, vender dados pessoais ou disponibilizar os dados do usuário a anunciantes.</p>
 
-<h2>14. Direitos e contato</h2>
+<h2>15. Direitos e contato</h2>
 <p>Solicitações relacionadas a privacidade e proteção de dados podem ser encaminhadas para <a href="mailto:produtos.aps.suporte@gmail.com?subject=Privacidade%20PRIORIZA"><strong>produtos.aps.suporte@gmail.com</strong></a>. O mesmo canal oficial está disponível na página de <a href="../suporte/"><strong>Suporte</strong></a>.</p>
 
-<h2>15. Alterações desta Política</h2>
+<h2>16. Alterações desta Política</h2>
 <p>Esta Política pode ser atualizada quando funcionalidades, requisitos legais ou práticas do aplicativo mudarem. A data da revisão mais recente será sempre indicada no topo desta página.</p>
 </article></div></main>
 <footer class="footer"><div class="container footer-in"><div>PRIORIZA · Pessoas, não aplicativos.</div><div class="footer-links"><a href="../">Início</a><a href="../termos/">Termos</a><a href="../ajuda/">Ajuda</a><a href="../suporte/">Suporte</a></div></div></footer>
