@@ -7,9 +7,9 @@
 <div class="notice"><strong>Resumo:</strong> o PRIORIZA foi projetado para funcionar principalmente no aparelho. Não há, no aplicativo auditado, servidor próprio da APS para armazenar contatos, mensagens, compras ou uma cópia do backup. O backup em nuvem é opcional, faz parte do PRIORIZA Pro e utiliza a Conta Google escolhida pelo usuário. A compra do Pro é processada pela Google Play.</div>
 
 <h2>1. Dados da agenda</h2>
-<p>No Android 17 ou mais recente, o PRIORIZA usa o seletor de contatos oficial do sistema. O aplicativo recebe somente as pessoas escolhidas pelo usuário e solicita apenas os campos necessários para o reconhecimento, atualmente telefone e e-mail, além do nome e identificador de contato fornecidos pelo seletor.</p>
+<p>No Android 17 ou mais recente, o PRIORIZA usa o seletor de contatos oficial do sistema. O aplicativo recebe somente as pessoas escolhidas pelo usuário e solicita apenas os campos necessários para o reconhecimento: telefone, e-mail e, quando disponível, a foto do contato, além do nome e identificador fornecidos pelo seletor.</p>
 <p>No Android 16 ou anterior, o aplicativo pode solicitar a permissão de leitura da agenda para permitir a seleção e reconciliação de pessoas. Nesse fluxo, pode ler nome, telefone, e-mail, foto e identificadores técnicos da agenda.</p>
-<p>Para pessoas configuradas ou prioritárias, algumas dessas informações podem permanecer armazenadas localmente para manter uma identidade estável mesmo quando a agenda muda. O aplicativo também utiliza fingerprints criptográficos de telefone e e-mail em partes do mecanismo de reconciliação.</p>
+<p>Para pessoas configuradas ou prioritárias, algumas dessas informações podem permanecer armazenadas localmente para manter uma identidade estável mesmo quando a agenda muda. Quando há foto, o PRIORIZA pode criar uma cópia reduzida própria para não depender da URI da agenda do aparelho. O aplicativo também utiliza fingerprints criptográficos de telefone e e-mail em partes do mecanismo de reconciliação.</p>
 
 <h2>2. Notificações</h2>
 <p>Quando o acesso às notificações é autorizado, o PRIORIZA pode inspecionar informações necessárias para descobrir quem tentou contato e qual tipo de evento ocorreu. Isso pode incluir aplicativo de origem, categoria, título, remetente fornecido pelo Android, endereço ou URI do remetente, timestamps e outros metadados da notificação.</p>
@@ -32,8 +32,8 @@
 <h2>6. Backup opcional na Conta Google</h2>
 <p>O backup não é obrigatório. Quando ativado, o PRIORIZA cria um arquivo criptografado e o armazena no Google Drive da Conta Google escolhida pelo usuário.</p>
 <p>O arquivo pode conter, dentro da proteção criptográfica:</p>
-<ul class="list"><li>registro interno e nome das pessoas;</li><li>telefones e e-mails de pessoas prioritárias;</li><li>estado de prioridade;</li><li>regras individuais e horários;</li><li>identidades adicionadas ou vinculadas;</li><li>resoluções de identidade e decisões marcadas como não prioritárias;</li><li>informações necessárias para mesclar e reconciliar pessoas entre aparelhos.</li></ul>
-<p>Antes do backup, informações específicas do aparelho que não são portáveis, como URI local de foto e determinados IDs da agenda, são removidas.</p>
+<ul class="list"><li>registro interno e nome das pessoas;</li><li>telefones e e-mails de pessoas prioritárias;</li><li>cópia reduzida da foto da pessoa, quando disponível;</li><li>estado de prioridade;</li><li>regras individuais e horários;</li><li>identidades adicionadas ou vinculadas;</li><li>resoluções de identidade e decisões marcadas como não prioritárias;</li><li>informações necessárias para mesclar e reconciliar pessoas entre aparelhos.</li></ul>
+<p>Antes do backup, informações específicas do aparelho que não são portáveis, como a URI local da agenda e determinados IDs do contato, são removidas. Quando existe uma cópia interna portátil da foto criada pelo PRIORIZA, ela pode acompanhar o arquivo criptografado para continuar disponível após a restauração.</p>
 <p>Não entram no backup conteúdo ou histórico de mensagens, diagnóstico temporário, pendências de reconhecimento, histórico temporário da segunda chamada, chamadas ativas, métricas de compatibilidade, permissões do Android nem URI local do som escolhido.</p>
 
 <h2>7. Proteção do backup</h2>
